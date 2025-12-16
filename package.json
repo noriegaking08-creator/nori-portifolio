@@ -4,10 +4,11 @@
   "description": "Ndizeye Noriega's portfolio website",
   "main": "server.js",
   "scripts": {
-    "dev": "node server.js",
-    "start": "node server.js",
-    "build": "npm run build:static",
-    "vercel-build": "npm run build:static"
+    "dev": "npx serve .",
+    "start": "npx serve .",
+    "build": "echo Building static site...",
+    "vercel-build": "echo Vercel build completed",
+    "test": "echo \"No tests specified\" && exit 0"
   },
   "keywords": [
     "portfolio",
