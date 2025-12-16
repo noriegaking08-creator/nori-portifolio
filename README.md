@@ -161,9 +161,16 @@ vercel
 5. Click "Deploy" to deploy your site
 
 The project is configured with:
-- A `vercel.json` file that handles client-side routing
+- A `vercel.json` file that handles client-side routing and static asset serving
 - An API route at `/api/contact` to handle form submissions
 - Proper asset handling for images and other static files
+
+#### Deployment Configuration Notes
+The following changes were made to ensure proper deployment on Vercel:
+- Updated all asset paths in index.html to use absolute paths (e.g., `/css/style.css`, `/js/main.js`)
+- Modified `vercel.json` to use the "filesystem" handler first, ensuring static assets are served properly
+- Simplified `package.json` to avoid Vercel treating the project as a Node.js app instead of static site
+- Removed server.js dependency for production deployment
 
 #### Environment Variables (Optional)
 If you want to add email functionality to the contact form:

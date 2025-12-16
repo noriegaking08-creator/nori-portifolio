@@ -2,23 +2,15 @@
   "name": "nori_portifolio",
   "version": "1.0.0",
   "description": "Ndizeye Noriega's portfolio website",
-  "main": "server.js",
   "scripts": {
     "dev": "npx serve .",
-    "start": "npx serve .",
-    "build": "echo Building static site...",
-    "vercel-build": "echo Vercel build completed",
-    "test": "echo \"No tests specified\" && exit 0"
+    "start": "npx serve ."
   },
   "keywords": [
     "portfolio",
-    "express",
+    "static",
     "vercel"
   ],
   "author": "Ndizeye Noriega",
-  "license": "ISC",
-  "type": "commonjs",
-  "dependencies": {
-    "express": "^5.2.1"
-  }
+  "license": "ISC"
 }
