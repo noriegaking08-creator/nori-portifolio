@@ -1,14 +1,16 @@
 {
-  "version": 2,
+  "github": {
+    "silent": true
+  },
   "cleanUrls": true,
   "trailingSlash": false,
   "headers": [
     {
-      "source": "/(.*)",
+      "source": "/(.+\\.(css|js|png|jpg|jpeg|gif|ico|svg|woff|woff2|ttf|eot|json|xml|txt|map))",
       "headers": [
         {
           "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
+          "value": "public, max-age=31536000, immutable"
         }
       ]
     }
@@ -17,10 +19,6 @@
     {
       "source": "/api/(.*)",
       "destination": "/api/contact.js"
-    },
-    {
-      "source": "/((?!.*\\.(?:css|js|png|jpg|jpeg|gif|ico|svg|woff|woff2|ttf|eot|json|xml|txt|map)$).*)",
-      "destination": "/index.html"
     }
   ]
 }
